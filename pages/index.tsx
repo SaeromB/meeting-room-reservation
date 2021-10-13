@@ -14,6 +14,7 @@ const useModal = () => {
   };
 };
 
+
 const Home: NextPage = () => {
   const { isShown, toggle } = useModal();
   const onConfirm = () => toggle();
@@ -28,12 +29,12 @@ const Home: NextPage = () => {
       <ReservationModal
         isShown={isShown}
         hide={toggle}
-        headerText="Confirmation"
+        headerText=""
         modalContent={
           <ConfirmationModal
             onConfirm={onConfirm}
             onCancel={onCancel}
-            message="Are you sure you want to delete element?"
+            message="회의내용"
           />
         }
       />
