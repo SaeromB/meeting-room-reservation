@@ -2445,6 +2445,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-dom@^17.0.9":
+  version "17.0.9"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.9.tgz#441a981da9d7be117042e1a6fd3dac4b30f55add"
+  integrity sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-syntax-highlighter@11.0.5":
   version "11.0.5"
   resolved "https://registry.yarnpkg.com/@types/react-syntax-highlighter/-/react-syntax-highlighter-11.0.5.tgz#0d546261b4021e1f9d85b50401c0a42acb106087"
@@ -8479,7 +8486,7 @@ prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.0.0, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.0.0, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8794,6 +8801,13 @@ react-popper@^2.2.4:
   dependencies:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
+
+react-portal@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/react-portal/-/react-portal-4.2.1.tgz#12c1599238c06fb08a9800f3070bea2a3f78b1a6"
+  integrity sha512-fE9kOBagwmTXZ3YGRYb4gcMy+kSA+yLO0xnPankjRlfBv4uCpFXqKPfkpsGQQR15wkZ9EssnvTOl1yMzbkxhPQ==
+  dependencies:
+    prop-types "^15.5.8"
 
 react-refresh@0.8.3, react-refresh@^0.8.3:
   version "0.8.3"

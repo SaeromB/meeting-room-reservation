@@ -1,40 +1,24 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
-
-// const [isOpen, setIsOpen] = useState(false)
+import React from 'react';
+import styled from 'styled-components';
 
 const ReservationStatusDropdown = () => {
   return (
-    <DropdownContainer>
-      <DropdownHeader>예약 가능</DropdownHeader>
-      <DropdownListContainer>
-        <DropdownList>
-          <ListItem>예약 가능</ListItem>
-          <ListItem>예약 불가능</ListItem>
-          </DropdownList>
-      </DropdownListContainer>
-    </DropdownContainer>
+    <Select>
+      <Option>예약가능</Option>
+      <Option>예약불가능</Option>
+    </Select>
+
   )
 }
 
-const DropdownContainer = styled.div`
-  width: 160px;
-  height: 48px;
-
+const Select = styled.select`
+  width: 84px;
+  height: 24px;
+  text-align-last: center;
+  border-radius: 30px;
 `
-const DropdownHeader = styled.div`
-/* font-family */
+
+const Option = styled.option`
   font-size: 14px;
 `
-
-const DropdownListContainer = styled.div`
-`
-
-const DropdownList = styled.ul`
-/* font-family */
-  font-size: 14px;
-`
-const ListItem = styled.li`
-`
-
 export default ReservationStatusDropdown
