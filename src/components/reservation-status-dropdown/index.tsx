@@ -1,6 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
+const Select = styled.select`
+  width: 84px;
+  height: 24px;
+  text-align-last: center;
+  border-radius: 30px;
+  margin-left: 8px;
+  border: none;
+`
+
+const Option = styled.option`
+  font-size: 14px;
+`
+
 const ReservationStatusDropdown = () => {
   return (
     <Select>
@@ -11,14 +25,5 @@ const ReservationStatusDropdown = () => {
   )
 }
 
-const Select = styled.select`
-  width: 84px;
-  height: 24px;
-  text-align-last: center;
-  border-radius: 30px;
-`
 
-const Option = styled.option`
-  font-size: 14px;
-`
-export default ReservationStatusDropdown
+export default ReservationStatusDropdown;

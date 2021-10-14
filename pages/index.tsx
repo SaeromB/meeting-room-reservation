@@ -1,8 +1,11 @@
-import type { NextPage } from 'next'
+import { NextPage } from 'next'
 import { ReservationModal } from '../src/components/reservation-modal'
 import { ConfirmationModal } from '../src/components/confirmationModal';
 import { useState } from 'react';
 import React from 'react';
+import GlobalStyle from '../src/globalStyles';
+import ReservationContent from '../src/components/pages/reservation';
+
 
 const useModal = () => {
   const [isShown, setIsShown] = useState<boolean>(false);
@@ -15,16 +18,19 @@ const useModal = () => {
 };
 
 
+
+
 const Home: NextPage = () => {
   const { isShown, toggle } = useModal();
   const onConfirm = () => toggle();
   const onCancel = () => toggle();
 
-
-  const content = <React.Fragment>modal</React.Fragment>;
-
   return (
+    
     <React.Fragment>
+      <GlobalStyle/>
+      <ReservationContent/>
+      {/* Modal */}
       <button onClick={toggle}>Open modal</button>
       <ReservationModal
         isShown={isShown}

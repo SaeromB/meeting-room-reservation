@@ -92,11 +92,12 @@ export const ConfirmationModal: FunctionComponent<ConfirmationModalProps> = (pro
       {/* 회의실 */}
       <Wrapper>
       <Label>회의실</Label>
-          {/* <Input/> */}
+        {/* <Input/> */}
+        {/* 대회의실 1 */}
       </Wrapper>
       {/* 예약자 */}
       <Wrapper>
-        <Label>예약자</Label>
+        <Label>예약자{' '}</Label>
           <Input/>
       </Wrapper>
       <TimePickerWrpper>

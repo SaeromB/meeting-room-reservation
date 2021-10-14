@@ -17,12 +17,16 @@ const MobileContainer = styled.div`
   width: 250px;
   height: 350px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 30px;
+  background-color: #ffffff;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 16px;
+  margin-right: 16px;
 `
 
 const Image = styled.img`
-
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 `
 
 const RoomName = styled.div`
